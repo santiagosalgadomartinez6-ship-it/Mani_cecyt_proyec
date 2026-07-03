@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decide Sin Drogas | PEC - CECYTEM</title>
+<meta name="description" content="Sitio de prevención de adicciones para jóvenes. Proyecto Educativo Comunitario (PEC) - CECYTEM.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">🌱 Decide<span>SinDrogas</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#informacion" class="nav-link">Información</a>
+        <a href="#multimedia" class="nav-link">Multimedia</a>
+        <a href="#encuesta" class="nav-link">Encuesta</a>
+        <a href="#quiz" class="nav-link">Quiz</a>
+        <a href="#recursos" class="nav-link">Recursos</a>
+        <a href="#equipo" class="nav-link">Equipo</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== INICIO ===================== -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Tu vida, tus decisiones, tu futuro</h1>
+      <p>Un espacio creado por estudiantes de CECYTEM para informar, prevenir y acompañar a jóvenes sobre el consumo de drogas, con información confiable y un lenguaje cercano a ti.</p>
+      <div class="hero-buttons">
+        <a href="#informacion" class="btn btn-primary">Conoce los riesgos</a>
+        <a href="#recursos" class="btn btn-secondary">Pide ayuda</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <strong id="contadorEncuestas">0</strong>
+        <span>Encuestas respondidas en este sitio</span>
+      </div>
+      <div class="stat-card">
+        <strong>+5</strong>
+        <span>Temas de prevención cubiertos</span>
+      </div>
+      <div class="stat-card">
+        <strong>100%</strong>
+        <span>Información verificada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFORMACIÓN ===================== -->
+  <section id="informacion" class="section">
+    <h2 class="section-title">Información preventiva</h2>
+    <p class="section-subtitle">Conocer los efectos reales de las sustancias es el primer paso para tomar mejores decisiones. Esta información está basada en organismos de salud reconocidos como la OMS, CONADIC e IMSS.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tabaco">Tabaco</button>
+      <button class="tab-btn" data-tab="alcohol">Alcohol</button>
+      <button class="tab-btn" data-tab="marihuana">Marihuana</button>
+      <button class="tab-btn" data-tab="inhalables">Inhalables</button>
+      <button class="tab-btn" data-tab="sinteticas">Drogas sintéticas</button>
+    </div>
+
+    <div class="tab-content active" id="tabaco">
+      <h3>Tabaco</h3>
+      <p><strong>¿Qué es?</strong> Sustancia que contiene nicotina, altamente adictiva, presente en cigarros y vapeadores.</p>
+      <p><strong>Efectos a corto plazo:</strong> tos, mareo, mal aliento, disminución del rendimiento físico.</p>
+      <p><strong>Efectos a largo plazo:</strong> enfermedades respiratorias, cardiovasculares y distintos tipos de cáncer.</p>
+      <p class="fuente">Fuente: Organización Mundial de la Salud (OMS), Secretaría de Salud.</p>
+    </div>
+
+    <div class="tab-content" id="alcohol">
+      <h3>Alcohol</h3>
+      <p><strong>¿Qué es?</strong> Depresor del sistema nervioso central, legal para adultos pero de alto riesgo en adolescentes.</p>
+      <p><strong>Efectos a corto plazo:</strong> pérdida de coordinación, juicio alterado, conductas de riesgo.</p>
+      <p><strong>Efectos a largo plazo:</strong> daño hepático, dependencia, problemas familiares y escolares.</p>
+      <p class="fuente">Fuente: Encuesta Nacional de Consumo de Drogas, Alcohol y Tabaco (ENCODAT), CONADIC.</p>
+    </div>
+
+    <div class="tab-content" id="marihuana">
+      <h3>Marihuana</h3>
+      <p><strong>¿Qué es?</strong> Sustancia derivada de la planta de cannabis que altera la percepción y el estado de ánimo.</p>
+      <p><strong>Efectos a corto plazo:</strong> alteración de la memoria a corto plazo, ansiedad, alteración en la coordinación.</p>
+      <p><strong>Efectos a largo plazo:</strong> puede afectar el desarrollo cerebral en adolescentes y favorecer dependencia.</p>
+      <p class="fuente">Fuente: Instituto Mexicano del Seguro Social (IMSS), CONADIC.</p>
+    </div>
+
+    <div class="tab-content" id="inhalables">
+      <h3>Inhalables</h3>
+      <p><strong>¿Qué son?</strong> Sustancias químicas de uso común (solventes, aerosoles) que se inhalan para alterar la conciencia.</p>
+      <p><strong>Efectos a corto plazo:</strong> mareo, pérdida de coordinación, náusea.</p>
+      <p><strong>Efectos a largo plazo:</strong> daño cerebral, hepático y renal; riesgo de muerte súbita incluso en el primer uso.</p>
+      <p class="fuente">Fuente: Centros de Integración Juvenil (CIJ).</p>
+    </div>
+
+    <div class="tab-content" id="sinteticas">
+      <h3>Drogas sintéticas</h3>
+      <p><strong>¿Qué son?</strong> Sustancias creadas en laboratorios clandestinos (como metanfetaminas), de muy alto potencial adictivo.</p>
+      <p><strong>Efectos a corto plazo:</strong> aceleración cardiaca, insomnio, agresividad.</p>
+      <p><strong>Efectos a largo plazo:</strong> daño neurológico severo, psicosis, alto riesgo de sobredosis.</p>
+      <p class="fuente">Fuente: Comisión Nacional Contra las Adicciones (CONADIC).</p>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h4>📊 ¿Sabías que...?</h4>
+        <p>La mayoría de las personas que consumen sustancias por primera vez lo hacen durante la adolescencia, según la ENCODAT.</p>
+      </div>
+      <div class="info-card">
+        <h4>🧠 Cerebro en desarrollo</h4>
+        <p>El cerebro continúa desarrollándose hasta los 25 años aproximadamente; el consumo temprano de sustancias puede afectar ese proceso.</p>
+      </div>
+      <div class="info-card">
+        <h4>🤝 No estás solo</h4>
+        <p>Hablar con un adulto de confianza, docente o profesional de la salud es un paso válido y valiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MULTIMEDIA ===================== -->
+  <section id="multimedia" class="section section-alt">
+    <h2 class="section-title">Multimedia e infografías</h2>
+    <p class="section-subtitle">Recursos visuales para reforzar el mensaje de prevención.</p>
+
+    <div class="media-grid">
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="WhatsApp%20Video%202026-07-02%20at%2010.28.55%20PM.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de este video.
+        </video>
+      </div>
+
+      <div class="infografia">
+        <h4>Señales de alerta</h4>
+        <ul>
+          <li>Cambios bruscos de humor o conducta</li>
+          <li>Aislamiento de familia y amigos</li>
+          <li>Bajo rendimiento escolar repentino</li>
+          <li>Nuevas amistades poco conocidas</li>
+        </ul>
+      </div>
+
+      <div class="infografia">
+        <h4>Factores de protección</h4>
+        <ul>
+          <li>Comunicación abierta en casa y escuela</li>
+          <li>Actividades deportivas y artísticas</li>
+          <li>Autoestima y proyecto de vida claro</li>
+          <li>Redes de apoyo confiables</li>
+        </ul>
+      </div>
+
+      <div class="galeria">
+        <img src="WhatsApp%20Image%202026-07-02%20at%2010.28.55%20PM.jpeg" alt="Infografía de prevención 1">
+        <img src="WhatsApp%20Image%202026-07-03%20at%2010.28.55%20PM.jpeg" alt="Infografía de prevención 2">
+        <img src="WhatsApp%20Image%202026-07-04%20at%2010.30.29%20PM.jpeg" alt="Infografía de prevención 3">
+        <img src="WhatsApp%20Image%202026-07-05%20at%2010.30.29%20PM.jpeg" alt="Infografía de prevención 4">
+        <img src="WhatsApp%20Image%202026-07-06%20at%2010.30.30%20PM.jpeg" alt="Infografía de prevención 5">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENCUESTA (Formulario + "Base de datos") ===================== -->
+  <section id="encuesta" class="section">
+    <h2 class="section-title">Encuesta de prevención</h2>
+    <p class="section-subtitle">Tus respuestas son anónimas y nos ayudan a entender qué tan informados están los jóvenes sobre este tema. Las respuestas se almacenan localmente como base de registro del proyecto.</p>
+
+    <form id="formEncuesta" class="form-card">
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="10" max="25" required>
+      </div>
+
+      <div class="form-group">
+        <label for="grado">Grado escolar</label>
+        <select id="grado" name="grado" required>
+          <option value="">Selecciona una opción</option>
+          <option value="secundaria">Secundaria</option>
+          <option value="1er-semestre">1er semestre</option>
+          <option value="2do-semestre">2do semestre</option>
+          <option value="3er-semestre">3er semestre</option>
+          <option value="4to-semestre">4to semestre</option>
+          <option value="5to-semestre">5to semestre</option>
+          <option value="6to-semestre">6to semestre</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="conoceRiesgos">¿Conoces los riesgos del consumo de drogas?</label>
+        <select id="conoceRiesgos" name="conoceRiesgos" required>
+          <option value="">Selecciona una opción</option>
+          <option value="si-mucho">Sí, bastante</option>
+          <option value="si-poco">Sí, un poco</option>
+          <option value="no">No, casi nada</option>
+        </select>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="masInfo" name="masInfo">
+        <label for="masInfo">Me gustaría recibir más información sobre este tema</label>
+      </div>
+
+      <div class="form-group">
+        <label for="comentarios">Comentarios (opcional)</label>
+        <textarea id="comentarios" name="comentarios" rows="3" maxlength="300"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar encuesta</button>
+      <p class="form-msg" id="msgEncuesta"></p>
+    </form>
+  </section>
+
+  <!-- ===================== QUIZ INTERACTIVO ===================== -->
+  <section id="quiz" class="section section-alt">
+    <h2 class="section-title">Pon a prueba lo que aprendiste</h2>
+    <div class="quiz-card">
+      <p class="quiz-question">¿El cerebro humano termina de desarrollarse completamente alrededor de qué edad?</p>
+      <div class="quiz-options">
+        <button class="quiz-option" data-correct="false">12 años</button>
+        <button class="quiz-option" data-correct="false">18 años</button>
+        <button class="quiz-option" data-correct="true">25 años</button>
+        <button class="quiz-option" data-correct="false">30 años</button>
+      </div>
+      <p class="quiz-feedback" id="quizFeedback"></p>
+    </div>
+  </section>
+
+  <!-- ===================== RECURSOS ===================== -->
+  <section id="recursos" class="section">
+    <h2 class="section-title">Recursos de ayuda</h2>
+    <p class="section-subtitle">Si tú o alguien que conoces necesita apoyo, estas son opciones confiables a las que puedes acudir:</p>
+
+    <div class="recursos-grid">
+      <div class="recurso-card">
+        <h4>📞 Línea de la Vida</h4>
+        <p>Orientación telefónica gratuita y confidencial sobre adicciones, disponible las 24 horas.</p>
+        <p><strong>800 911 2000</strong></p>
+      </div>
+      <div class="recurso-card">
+        <h4>🏥 Centro de Salud más cercano</h4>
+        <p>Acude al Centro de Salud o Centro de Atención Primaria en Adicciones (CAPA) de tu localidad para orientación y apoyo profesional.</p>
+      </div>
+      <div class="recurso-card">
+        <h4>🏫 Orientación escolar CECYTEM</h4>
+        <p>El departamento de orientación de tu plantel puede canalizarte con especialistas y brindarte acompañamiento.</p>
+      </div>
+      <div class="recurso-card">
+        <h4>👨‍👩‍👧 Habla con un adulto de confianza</h4>
+        <p>Un familiar, docente o tutor puede ayudarte a buscar el apoyo adecuado sin juzgarte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EQUIPO Y CRONOGRAMA ===================== -->
+  <section id="equipo" class="section section-alt">
+    <h2 class="section-title">Equipo de trabajo</h2>
+    <p class="section-subtitle">Proyecto Educativo Comunitario (PEC) — CECYTEM, 2do semestre.</p>
+
+    <div class="equipo-grid">
+      <div class="equipo-card">
+        <div class="avatar">SN</div>
+        <h4>Santiago Yael Narcizo Escobar</h4>
+        <span class="rol">Diseño y Programación</span>
+        <p>Estructuración del sitio, maquetado HTML/CSS, lógica de interacción (formularios, encuesta y quiz) y pruebas de navegación.</p>
+      </div>
+      <div class="equipo-card">
+        <div class="avatar">EA</div>
+        <h4>Emmanuel Álvarez Hernández</h4>
+        <span class="rol">Investigación y Contenido</span>
+        <p>Recopilación de información preventiva, redacción de contenidos y verificación de fuentes confiables.</p>
+      </div>
+      <div class="equipo-card">
+        <div class="avatar">FR</div>
+        <h4>Fernando Reyes Salgado</h4>
+        <span class="rol">Pruebas y Documentación</span>
+        <p>Revisión de funcionamiento del sitio, detección de errores de navegación y seguimiento del cronograma del PEC.</p>
+      </div>
+    </div>
+
+    <h3 class="cronograma-title">Cronograma del proyecto</h3>
+    <div class="cronograma">
+      <table>
+        <thead>
+          <tr><th>Semana</th><th>Actividad</th><th>Responsable(s)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Investigación y recopilación de información</td><td>Emmanuel</td></tr>
+          <tr><td>2</td><td>Diseño de estructura y wireframes</td><td>Santiago</td></tr>
+          <tr><td>3</td><td>Programación de secciones y formularios</td><td>Santiago</td></tr>
+          <tr><td>4</td><td>Redacción final de contenido e infografías</td><td>Emmanuel</td></tr>
+          <tr><td>5</td><td>Pruebas de navegación y corrección de errores</td><td>Fernando</td></tr>
+          <tr><td>6</td><td>Presentación del PEC</td><td>Equipo completo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="section">
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-subtitle">¿Tienes dudas, sugerencias o quieres compartir tu opinión sobre el proyecto? Escríbenos.</p>
+
+    <form id="formContacto" class="form-card">
+      <div class="form-group">
+        <label for="nombreContacto">Nombre</label>
+        <input type="text" id="nombreContacto" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="correoContacto">Correo electrónico</label>
+        <input type="email" id="correoContacto" name="correo" required>
+      </div>
+      <div class="form-group">
+        <label for="mensajeContacto">Mensaje</label>
+        <textarea id="mensajeContacto" name="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      <p class="form-msg" id="msgContacto"></p>
+    </form>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>Proyecto Educativo Comunitario · CECYTEM · 2do semestre</p>
+    <p>Equipo: Santiago Yael Narcizo Escobar · Emmanuel Álvarez Hernández · Fernando Reyes Salgado</p>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Subir al inicio">↑</button>
+
+  <script>
+    // ===================== NAVEGACIÓN =====================
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        menuToggle.classList.remove('active');
+      });
+    });
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 90;
+        if (window.scrollY >= top) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      });
+      document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 400);
+    });
+
+    document.getElementById('scrollTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ===================== TABS DE INFORMACIÓN =====================
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // ===================== "BASE DE DATOS" LOCAL (localStorage) =====================
+    // Como el proyecto se entrega como páginas estáticas (sin servidor backend),
+    // se simula una base de datos guardando los registros en el navegador con localStorage.
+    function guardarRegistro(clave, registro) {
+      const datos = JSON.parse(localStorage.getItem(clave)) || [];
+      datos.push(registro);
+      localStorage.setItem(clave, JSON.stringify(datos));
+      return datos.length;
+    }
+
+    function actualizarContadorEncuestas() {
+      const datos = JSON.parse(localStorage.getItem('encuestas')) || [];
+      document.getElementById('contadorEncuestas').textContent = datos.length;
+    }
+    actualizarContadorEncuestas();
+
+    // Encuesta
+    document.getElementById('formEncuesta').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const registro = {
+        edad: this.edad.value,
+        grado: this.grado.value,
+        conoceRiesgos: this.conoceRiesgos.value,
+        masInfo: this.masInfo.checked,
+        comentarios: this.comentarios.value,
+        fecha: new Date().toISOString()
+      };
+      guardarRegistro('encuestas', registro);
+      actualizarContadorEncuestas();
+      document.getElementById('msgEncuesta').textContent = '¡Gracias por responder! Tu encuesta fue registrada.';
+      document.getElementById('msgEncuesta').className = 'form-msg success';
+      this.reset();
+    });
+
+    // Contacto
+    document.getElementById('formContacto').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const registro = {
+        nombre: this.nombre.value,
+        correo: this.correo.value,
+        mensaje: this.mensaje.value,
+        fecha: new Date().toISOString()
+      };
+      guardarRegistro('contactos', registro);
+      document.getElementById('msgContacto').textContent = 'Mensaje enviado. ¡Gracias por contactarnos, ' + registro.nombre + '!';
+      document.getElementById('msgContacto').className = 'form-msg success';
+      this.reset();
+    });
+
+    // ===================== QUIZ INTERACTIVO =====================
+    document.querySelectorAll('.quiz-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        const feedback = document.getElementById('quizFeedback');
+        document.querySelectorAll('.quiz-option').forEach(o => o.disabled = true);
+        if (opt.dataset.correct === 'true') {
+          opt.classList.add('correct');
+          feedback.textContent = '¡Correcto! El cerebro continúa desarrollándose hasta aproximadamente los 25 años.';
+          feedback.className = 'quiz-feedback success';
+        } else {
+          opt.classList.add('incorrect');
+          feedback.textContent = 'No es correcto. La respuesta correcta es 25 años.';
+          feedback.className = 'quiz-feedback error';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
